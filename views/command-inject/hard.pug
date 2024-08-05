@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Hard Router
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #007bff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+  body
+    h1 Hard Router
+    form(action="/command-inject/hard" method="get")
+      input(type="text" name="ip" placeholder="Enter IP address")
+      button(type="submit") Submit
+    code
+      pre #{output}
+    a(href="/") Back to Home
